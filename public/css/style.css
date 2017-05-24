@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #fff;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0px;
+    overflow-y: auto;
+    font-family: 'Nunito', sans-serif;
+    -webkit-text-size-adjust: 120%;
+    color: #008dff;
+    text-align: center;
+}
+
+h1 {
+    line-height: 0;
+    font-size: 64px;
+}
+
+h2 {
+    line-height: 0;
+    font-size: 32px;
+}
+
+h3 {
+    line-height: 0;
+    font-size: 28px;
+}
+
+h4 {
+    line-height: 0;
+    font-size: 24px;
+}
+
+h5 {
+    line-height: 0;
+    font-size: 20px;
+}
+
+p {
+    line-height: 0;
+}
+
+a {
+    line-height: 0;
+    color: #008dff;
+    text-decoration: none;
+}
+
+header {
+    margin-top: 15vh;
+    height: 580px;
+    text-align: center;
+}
+
+#canvas {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#wrapper {
+    width: 100%;
+}
