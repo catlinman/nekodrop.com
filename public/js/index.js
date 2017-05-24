@@ -100,10 +100,11 @@ function updateParticles() {
         var pos = particles[i][0];
         var speed = particles[i][1];
 
-        pos.add(speed);
+        pos.add(speed); // Apply the particle movement to its position.
 
-        var distToMouse = mousePos.dist(pos);
+        var distToMouse = mousePos.dist(pos); // Get the distance of the particle to the mouse cursor.
 
+        // If the distance is shorter than the repel distance we apply force to the particle.
         if (distToMouse < particleRepel) {
             var repel = createVector(pos.x - mousePos.x, pos.y - mousePos.y);
             var distFrac = (particleRepel - distToMouse) / particleRepel
