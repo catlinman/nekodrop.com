@@ -43,10 +43,10 @@ function startWave() {
 // Particle creation function. Uses window size for particle count.
 function createParticles() {
     // Set the correct particle count if it wasn't already set.
-    if (particleCount == null) particleCount = (width + height) / 2;
+    if (particleCount == null) particleCount = (width * height) / 10000;
 
     // Calculate a count of particles that responds to the screen size.
-    var mean = (width + height) / 2;
+    var mean = (width * height) / 10000;
 
     // Iterate over our particle range and start adding data to the particle array.
     for (var i = 0; i < particleCount * particleMult; i++) {
@@ -166,7 +166,7 @@ function setup() {
     pingSize = (width + height);
 
     // Set particle variables.
-    particleMult = 0.1;
+    particleMult = 0.75;
     particleSize = 4;
     particleLine = 1;
     particleRepel = 128;
