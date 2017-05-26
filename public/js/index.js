@@ -3,6 +3,7 @@
 function doGET(path, callback) {
 	var xhr = new XMLHttpRequest();
 
+	// Prepare the callback.
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == 4) {
 			if (xhr.status == 200) {
@@ -14,6 +15,7 @@ function doGET(path, callback) {
 		}
 	};
 
+	// Make a GET request with a cache buster.
 	xhr.open("GET", path + "?cache=" + (Math.random() * 1000000));
 	xhr.send();
 }
@@ -44,7 +46,7 @@ function getStatus() {
 			// If it exists we simply overwrite previous information.
 			if (field != null) {
 				field.getElementsByTagName("h5").innerHTML = serverInfo[0];
-				field.getElementsByTagName("p").innerHTML = serverInfo[1];
+				field.getElementsByTagName("p").innerHTML = "Status " + serverInfo[1].match(/\d{3}/);
 			
 			} else {
 				// Create a new section for the site and tag it correctly.
@@ -64,7 +66,7 @@ function getStatus() {
 					serverStat.innerHTML = "Connection failed"
 					
 				} else {
-					serverStat.innerHTML = serverInfo[1];
+					serverStat.innerHTML = "Status " + serverInfo[1].match(/\d{3}/);
 				}
 				
 				// Append the new elements.
