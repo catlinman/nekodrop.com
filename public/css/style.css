@@ -50,11 +50,22 @@ p {
 a {
     color: #008dff;
     text-decoration: none;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #005090;
 }
 
 header {
-    margin-top: 15vh;
-    text-align: center;
+    margin-top: 12vh;
+}
+
+footer {
+    margin-bottom: 3%;
 }
 
 #canvas {
