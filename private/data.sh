@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Output data file location.
-out="../public/data.txt"
+out="/var/www/nekodrop.com/public/data.txt"
 
 # Truncate the data file.
 : > $out

@@ -13,6 +13,14 @@ performed a circlular drop expands in the background.
 The page runs on a rather simple nginx setup. The configuration files are
 included in the *private/nginx* directory.
 
+For the real time updating part of the page you will have to run the *data.sh*
+script in the *private* directory in intervals. You can use any job scheduler
+you prefer for this. On the site the interval is set to one minute between
+executions.
+
+Inside the file are also the end points for connections. Adding new ones is
+fairly easy since the process is commented in the script.
+
 # License #
 
 This repository is released under the MIT license. For more information please
