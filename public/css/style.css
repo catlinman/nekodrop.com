@@ -63,12 +63,12 @@ a:hover {
 }
 
 header {
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
 
 footer {
-	padding-bottom: 3%;
-    margin-bottom: 3%;
+	padding-bottom: 1%;
+    margin-bottom: 1%;
 }
 
 #canvas {

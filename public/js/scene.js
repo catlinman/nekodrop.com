@@ -27,7 +27,7 @@ function drawWave() {
     noFill();
     strokeWeight(16 - (pingValue / pingSize * 16));
     stroke(objectHue, 255, 255, 255 - (pingValue / pingSize * 280));
-    ellipse(width / 2, height / 2, pingValue);
+    ellipse(width / 2, (height / 2) - document.body.scrollTop, pingValue);
 }
 
 // Updates the circle and resets its position if needed.
