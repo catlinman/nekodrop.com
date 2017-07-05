@@ -80,7 +80,7 @@ function drawParticles() {
     for (var i = 0; i < particles.length; i++) {
         var aPos = particles[i][0]; // Get the position of the first particle.
 
-        fill(objectHue, 255, 255); // Set the color for the particle dots.
+        fill(objectHue, 100, 100); // Set the color for the particle dots.
 
         strokeWeight(0);
         ellipse(aPos.x, aPos.y, particleSize, particleSize); // Draw  a dot.
@@ -93,7 +93,7 @@ function drawParticles() {
             if (dist <= particleDistance) { // If the dist
                 var influence = dist / particleDistance;
                 strokeWeight(particleLine - influence);
-                stroke(objectHue, 255, 255 - 255 * influence, 255 - 255 * influence);
+                stroke(objectHue, 100, 100 - 100 * influence, 100 - 100 * influence);
 
                 line(aPos.x, aPos.y, bPos.x, bPos.y);
             }
@@ -177,7 +177,7 @@ function setup() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(windowWidth, windowHeight); // Set the correct canvas size.
 
     pingSize = (width + height); // Update the size of the ping circle max.
 
