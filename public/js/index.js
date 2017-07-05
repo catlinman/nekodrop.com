@@ -42,11 +42,11 @@ function getStatus() {
             // Attempt to get the element in which information is presented.
             var field = document.getElementById(serverInfo[0]);
 
+            // Create the HTML for the server link.
+            var serverHTML = "<a href=\"https://" + serverInfo[0] + "\">" + serverInfo[0] + "</a>";
+
             // If it exists we simply overwrite previous information.
             if (field != null) {
-                // Create the HTML for the server link.
-                var serverHTML = "<a href=\"https://" + serverInfo[0] + "\">" + serverInfo[0] + "</a>";
-
                 field.getElementsByTagName("h5").innerHTML = serverHTML;
                 field.getElementsByTagName("p").innerHTML = "Status " + serverInfo[1].match(/\d{3}/);
 
@@ -58,7 +58,7 @@ function getStatus() {
 
                 // Create an element for the server name.
                 siteURL = document.createElement("h5");
-                siteURL.innerHTML = serverInfo[0];
+                siteURL.innerHTML = serverHTML;
 
                 // Create an element for the site status.
                 serverStat = document.createElement("p");

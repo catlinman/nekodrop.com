@@ -16,7 +16,8 @@ included in the *private/nginx* directory.
 For the real time updating part of the page you will have to run the *data.sh*
 script in the *private* directory in intervals. You can use any job scheduler
 you prefer for this. On the site the interval is set to one minute between
-executions.
+executions. It should be noted that you have to set the right execution
+permissions on the shell file for it to run.
 
 Inside the file are also the end points for connections. Adding new ones is
 fairly easy since the process is commented in the script.
