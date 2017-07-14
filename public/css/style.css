@@ -1,3 +1,4 @@
+
 html {
     height: 100%;
     -webkit-background-size: cover;
@@ -6,8 +7,8 @@ html {
     background-size: cover;
     background: #fff;
     background-repeat: no-repeat;
-	-webkit-text-size-adjust: 80%;
-	-ms-text-size-adjust: 80%;
+    -webkit-text-size-adjust: 80%;
+    -ms-text-size-adjust: 80%;
 }
 
 body {
@@ -44,7 +45,7 @@ h5 {
 }
 
 p {
-	font-weight: 200;
+    font-weight: 200;
     font-size: 14px;
     line-height: 16px;
 }
@@ -62,15 +63,6 @@ a:hover {
     color: #005090;
 }
 
-header {
-    margin-top: 10vh;
-}
-
-footer {
-	padding-bottom: 1%;
-    margin-bottom: 1%;
-}
-
 #canvas {
     overflow: hidden;
     position: fixed;
@@ -82,25 +74,31 @@ footer {
 }
 
 #wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
     min-width: 320px;
 }
 
 .logo {
     max-width: 500px;
+    margin-bottom: -24px;
 }
 
 .site {
-	display: inline-block;
-	margin-left: 16px;
-	margin-right: 16px;
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .site h5 {
-	margin-top: -4px;
-	margin-bottom: 0px;
+    margin-top: -4px;
+    margin-bottom: 0px;
 }
 
 .site p {
-	font-size: 12px;
-	margin-top: 0px;
+    font-size: 12px;
+    margin-top: 0px;
 }

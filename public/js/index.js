@@ -28,7 +28,10 @@ function getStatus() {
         // Split site data by the specified symbol.
         var servers = fileData.split(";");
 
-        // Splice the first item out since it's the timestamp.
+        // Splice the first item and check if it is the data format.
+        if (dataheader = servers.splice(0, 1)[0] !== "data") return;
+
+        // Splice the next item out since it's the timestamp.
         var datatime = servers.splice(0, 1)[0];
 
         // Iterate over servers and their data.

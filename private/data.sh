@@ -9,7 +9,7 @@ out="/var/www/nekodrop.com/public/data"
 # Site array. First part is the output name. Second the in point URL.
 sites[0]="alpha.nekodrop.com;catlinman.com"
 
-echo -n "$(date --utc +%F_%T);" >> $out # Insert a timestamp into the file.
+echo -n "data;$(date --utc +%F_%T);" >> $out # Insert data format and a timestamp into the file.
 
 # Iterate over prepared sites.
 for i in "${sites[@]}"; do
