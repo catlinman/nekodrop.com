@@ -1,0 +1,11 @@
+
+[Unit]
+# General service description.
+Description=Nekodrop site data refresh service
+
+[Service]
+# Non forking service
+Type=oneshot
+
+# Execution on start of service. Make sure the script has execution permission.
+ExecStart=/srv/nekodrop.com/private/data.sh

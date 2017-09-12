@@ -105,7 +105,7 @@ function getStatus() {
 }
 
 
-// Make a request and start a wave every 30 seconds.
+// Make a request and start a wave every 60 seconds.
 window.setInterval(function() {
     getStatus();
 }, 60000);
