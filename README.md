@@ -8,10 +8,12 @@ Landing page for the Nekodrop server network.
 This page acts as a landing for anyone visiting the base Nekodrop server. The
 idea is page will ping the master server which will return an array of servers
 in the network and show their availability on this page. Each time a ping is
-performed a circlular drop expands in the background.
+performed a circular drop expands in the background.
 
 The page runs on a rather simple nginx setup. The configuration files are
-included in the *private/nginx* directory.
+included in the *private/nginx* directory. Additionally, further configuration
+files for other Nekodrop server subsystems have been added as well such as
+a proxy pass for a [Comrelay](https://github.com/catlinman/comrelay) server.
 
 For the real time updating part of the page you will have to run the *data.sh*
 script in the *private* directory in intervals. You can use any job scheduler
